@@ -1,0 +1,269 @@
+        :root {
+            --primary-color: #3b5998;
+            --secondary-color: #6a85b6;
+            --accent-color: #4CAF50;
+            --text-color: #ffffff;
+            --container-bg: rgba(255, 255, 255, 0.9);
+            --container-border-radius: 20px;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--text-color);
+            text-align: center;
+        }
+        .welcome-container {
+            max-width: 600px;
+            padding: 40px;
+            background-color: var(--container-bg);
+            border-radius: var(--container-border-radius);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: #333;
+        }
+        .welcome-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .welcome-instructions {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .start-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-color);
+            background-color: var(--accent-color);
+            border-radius: 50px;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        .start-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 768px) {
+            .welcome-container {
+                margin: 20px;
+                padding: 30px;
+            }
+            .welcome-title {
+                font-size: 2rem;
+            }
+            .welcome-instructions {
+                font-size: 1rem;
+            }
+            .start-button {
+                font-size: 1.1rem;
+                padding: 12px 25px;
+            }
+        }
+
+        /* ===== CSS for Main page ===== */
+        :root {
+            --primary-color: #0f4c81;
+            --secondary-color: #4b88d4;
+            --accent-color: #38b000;
+            --background-color: #f0f4f8;
+            --text-color: #2c3e50;
+            --box-bg-color: #ffffff;
+            --input-bg-color: #f8f9fa;
+            --font-family: 'Poppins', sans-serif;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1000px;
+            background-color: var(--box-bg-color);
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        .tax-form, .results-section {
+            padding: 40px;
+            flex: 1;
+            min-width: 300px;
+        }
+        .tax-form {
+            border-right: 1px solid #e0e0e0;
+        }
+        .results-section {
+            background-color: #fdfdfd;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .input-group {
+            margin-bottom: 25px;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            font-family: var(--font-family);
+            font-size: 1rem;
+            background-color: var(--input-bg-color);
+            box-sizing: border-box;
+        }
+        .calculate-button {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: white;
+            background-color: var(--accent-color);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .calculate-button:hover {
+            background-color: #2d8a00;
+            transform: translateY(-2px);
+        }
+        .results-content h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .result-item:last-child {
+            border-bottom: none;
+        }
+        .result-item-label {
+            font-size: 1rem;
+        }
+        .result-item-value {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        .home-button {
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .age-selector-group, .regime-selector-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .age-option, .regime-option {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #555;
+            font-weight: 600;
+        }
+        .age-option:hover, .regime-option:hover {
+            background-color: #e9ecef;
+        }
+        .age-option.selected, .regime-option.selected {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .tax-form, .results-section {
+                border-right: none;
+                border-bottom: 1px solid #e0e0e0;
+            }
+            .container {
+                flex-direction: column;
+            }
+            .age-selector-group, .regime-selector-group {
+                flex-direction: column;
+            }
+            .age-option, .regime-option {
+                margin-bottom: 10px;
+            }
+        }
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.3s;
+        }
+        .modal-overlay.visible {
+            visibility: visible;
+            opacity: 1;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 90%;
+        }
+        .modal-content h3 {
+            margin-top: 0;
+            color: #d9534f;
+        }
+        .modal-content p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        .modal-close-btn {
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
